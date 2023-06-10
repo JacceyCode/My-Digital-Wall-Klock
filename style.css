@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  margin: auto;
+  font-size: 50px;
+  font-family: "Lobster", cursive;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  margin: auto;
+  background-color: bisque;
+  z-index: -1;
+  border-radius: 15px;
+  position: relative;
+}
+
+.klock {
+  width: 450px;
+  height: 450px;
+  border-radius: 25%;
+  z-index: 1;
+  display: flex;
+  position: relative;
+  margin: auto;
+  border: solid 20px limegreen;
+  background: linear-gradient(45deg, purple, yellow);
+}
+
+.circle {
+  height: 400px;
+  width: 400px;
+  border: solid 3px black;
+  position: relative;
+  display: flex;
+  margin: auto;
+  border-radius: 50%;
+  color: aqua;
+}
+
+.num {
+  position: absolute;
+  opacity: 0.8;
+}
+
+.one {
+  top: 20px;
+  left: 275px;
+}
+
+.two {
+  top: 80px;
+  left: 340px;
+}
+
+.three {
+  top: 165px;
+  left: 365px;
+}
+
+.four {
+  top: 255px;
+  left: 340px;
+}
+
+.five {
+  top: 315px;
+  left: 270px;
+}
+
+.six {
+  top: 340px;
+  left: 185px;
+}
+
+.seven {
+  top: 315px;
+  left: 100px;
+}
+
+.eight {
+  top: 255px;
+  left: 35px;
+}
+
+.nine {
+  top: 165px;
+  left: 5px;
+}
+
+.ten {
+  top: 90px;
+  left: 30px;
+}
+
+.eleven {
+  top: 20px;
+  left: 95px;
+}
+
+.twelve {
+  top: -10px;
+  left: 175px;
+}
+
+.hand {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0px 0px;
+}
+
+.seconds {
+  width: 2px;
+  height: 190px;
+  border-radius: 2px;
+  background-color: blue;
+  z-index: 15;
+  /* animation: sec 60s linear infinite; */
+}
+
+.minute {
+  width: 5px;
+  height: 150px;
+  border-radius: 3px;
+  background-color: green;
+  z-index: 10;
+  /* animation: min 3600s linear infinite; */
+}
+
+.hour {
+  width: 8px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: red;
+  z-index: 5;
+  /* animation: hr 43200s linear infinite; */
+}
+
+.center {
+  display: inline-block;
+  position: absolute;
+  top: 185px;
+  left: 188px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: palevioletred;
+  z-index: 15;
+}
+
+.date {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 35%;
+  left: 32%;
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  color: lime;
+  background-color: darkslategrey;
+  z-index: 15;
+  opacity: 0.6;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 56%;
+  left: 32%;
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  color: lime;
+  background-color: darkslategrey;
+  z-index: 15;
+  opacity: 0.6;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+/* 
+@keyframes sec {
+  0% {
+    transform: rotate(-180deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes min {
+  0% {
+    transform: rotate(-180deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes hr {
+  0% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+} */
